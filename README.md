@@ -39,8 +39,7 @@
 
 线程在获取到组内锁后都会立即释放GroupManager的锁，目的是让后续线程如果发现当前组满了，就立即开新组提交，提高效率。
 
-![组提交组件架构图 drawio](https://github.com/user-attachments/assets/6833c1c2-bea7-4e9d-9d14-c2e19320b841)
-
+![组提交组件图](https://github.com/user-attachments/assets/89f45484-26e5-44bd-9865-743bb1a1e36d)
 
 # 注意事项
 ## 本地事务和组提交事务的关系
